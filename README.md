@@ -45,6 +45,7 @@ sysbench comes with the following bundled benchmarks:
 - `memory`: a memory access benchmark
 - `threads`: a thread-based scheduler benchmark
 - `mutex`: a POSIX mutex benchmark
+- `gameserver`: a game server benchmark
 
 ## Features
 

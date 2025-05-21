@@ -25,6 +25,7 @@ autom4te.cache
 /src/tests/mutex/.deps
 /src/tests/oltp/.deps
 /src/tests/threads/.deps
+/src/tests/gameserver/.deps
 /TAGS
 /backup.bzr
 /config/config.guess
@@ -40,6 +41,7 @@ autom4te.cache
 /src/tests/mutex/TAGS
 /src/tests/oltp/TAGS
 /src/tests/threads/TAGS
+/src/tests/gameserver/TAGS
 /config/compile
 /config/depcomp
 /config/install-sh

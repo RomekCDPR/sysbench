@@ -43,6 +43,7 @@
 #include "tests/sb_memory.h"
 #include "tests/sb_threads.h"
 #include "tests/sb_mutex.h"
+#include "tests/sb_gameserver.h"
 
 /* Macros to control global execution mutex */
 #define SB_THREAD_MUTEX_LOCK() pthread_mutex_lock(&sb_globals.exec_mutex) 
@@ -62,7 +63,8 @@ typedef enum
   SB_REQ_TYPE_SQL,
   SB_REQ_TYPE_THREADS,
   SB_REQ_TYPE_MUTEX,
-  SB_REQ_TYPE_SCRIPT
+  SB_REQ_TYPE_SCRIPT,
+  SB_REQ_TYPE_GAMESERVER
 } sb_event_type_t;
 
 /* Request structure definition */
@@ -77,9 +79,10 @@ typedef struct
   /* type-specific data */
   union
   {
-    sb_file_request_t    file_request;
-    sb_threads_request_t threads_request;
-    sb_mutex_request_t   mutex_request;
+    sb_file_request_t       file_request;
+    sb_threads_request_t    threads_request;
+    sb_mutex_request_t      mutex_request;
+    sb_gameserver_request_t gameserver_request;
   } u;
 } sb_event_t;
 

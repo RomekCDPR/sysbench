@@ -406,6 +406,7 @@ src/tests/fileio/Makefile
 src/tests/memory/Makefile
 src/tests/threads/Makefile
 src/tests/mutex/Makefile
+src/tests/gameserver/Makefile
 src/lua/Makefile
 src/lua/internal/Makefile
 tests/Makefile
